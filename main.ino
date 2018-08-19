@@ -31,15 +31,5 @@ void loop()
   mySerial.print("test"); //text content
   updateSerial();
   mySerial.write(26);
-  while(1)
-  { 
-    if(mySerial.available()) 
-    {
-      Serial.write(mySerial.read());//Data received by mySerial will be outputted by Serial }
-    }
-    if(Serial.available())
-    {
-      mySerial.write(Serial.read());//Data received by Serial will be outputted by mySerial }   
-    }
-  }    
+     
 }
